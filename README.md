@@ -7,8 +7,5 @@ It's a website where people–mostly software engineers–practice their coding 
 
 https://leetcode.com/
 
-![LeetCode_logo_black](https://user-images.githubusercontent.com/60605281/113593667-f6538080-9636-11eb-865c-83d5cf97654b.png =50x50)
-
-
 ### Why this repo is not private?
 Because everybody is free to create PR to improve my solutions.
