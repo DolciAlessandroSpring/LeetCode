@@ -24,20 +24,4 @@ class Solution:
             if solution is not None:
                 break
          
-        if solution is None:
-            print("Solution not found")
-        else:
-            return solution
-
-# create class
-s = Solution()
-
-# create input
-nums = random.sample(range(-20, 20), 20)
-print("Numbers: ", nums)
-
-target = random.randint(-40, 40)
-print("Target: ", target)
-
-sol = s.twoSum(nums, target, debug = True)
-print("The solution is: ", sol, "  --   which uses the sum of", nums[sol[0]], "and", nums[sol[1]])
+        return solution
