@@ -25,3 +25,4 @@ class Solution:
                 break
          
         return solution
+    
