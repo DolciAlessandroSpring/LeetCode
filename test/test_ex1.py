@@ -47,7 +47,7 @@ class TestTwoSum(unittest.TestCase):
         nums = [1, 2, 3, 4, 5, 6]
         target = 12
         result = Solution().twoSum(nums, target, False)
-        self.assertEqual(result, None)
+        self.assertIsNone(result)
 
     def test_equal_number(self):
         nums = [3, 3]
