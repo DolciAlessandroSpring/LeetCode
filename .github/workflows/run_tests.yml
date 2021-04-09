@@ -9,7 +9,16 @@ on:
 jobs:
   CI:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout repository
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          
+      - name: run tests
+        run: PYTHONPATH=. pytest test/
+
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
