@@ -10,15 +10,22 @@ jobs:
   CI:
     runs-on: ubuntu-latest
     steps:
+    
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
       - name: Set up Python 3.8.2
         uses: actions/setup-python@v2
         with:
           python-version: 3.8.2
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
 #       - name: run CI tests
 #         run: PYTHONPATH=. pytest test/
       - run: echo "🍏 This job's status is ${{ job.status }}."
