@@ -26,17 +26,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-#       - name: run CI tests
-#         run: PYTHONPATH=. pytest test/
+      - name: run tests
+        run: PYTHONPATH=. pytest test/
+
       - run: echo "🍏 This job's status is ${{ job.status }}."
-# jobs:
-#   CI:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout repository
-#         uses: actions/checkout@v2
-#         with:
-#           fetch-depth: 0
-          
-#       - name: run tests
-#         run: PYTHONPATH=. pytest test/
