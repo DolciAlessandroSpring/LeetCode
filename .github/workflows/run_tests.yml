@@ -15,7 +15,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-#       - name: run CI tests
+      - name: run CI tests
+        run: PYTHONPATH=. pytest test/
       - run: echo "🍏 This job's status is ${{ job.status }}."
 # jobs:
 #   CI:
