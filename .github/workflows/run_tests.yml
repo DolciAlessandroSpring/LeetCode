@@ -26,7 +26,5 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: run tests
+      - name: Run tests
         run: PYTHONPATH=. pytest test/
-
-      - run: echo "🍏 This job's status is ${{ job.status }}."
