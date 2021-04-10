@@ -4,29 +4,29 @@ import sys
 
 random.seed(10)
 
-# from two_sum import Solution
+from two_sum import Solution
 
-from typing import List
-class Solution:
-    def twoSum(self, nums: List[int], target: int, debug: bool) -> List[int]:
+# from typing import List
+# class Solution:
+#     def twoSum(self, nums: List[int], target: int, debug: bool) -> List[int]:
 
-        solution = None
+#         solution = None
         
-        # take the first of the two numbers (leave space for the second number)
-        for i in range(len(nums)-1):
+#         # take the first of the two numbers (leave space for the second number)
+#         for i in range(len(nums)-1):
             
-            # search for the second number
-            for j in range(i+1, len(nums)):
+#             # search for the second number
+#             for j in range(i+1, len(nums)):
                 
-                if nums[i] + nums[j] == target:
-                    solution = [i, j]
-                    break
+#                 if nums[i] + nums[j] == target:
+#                     solution = [i, j]
+#                     break
             
-            # break as soon as you find the solution
-            if solution is not None:
-                break
+#             # break as soon as you find the solution
+#             if solution is not None:
+#                 break
          
-        return solution
+#         return solution
 
 
 class TestTwoSum(unittest.TestCase):
