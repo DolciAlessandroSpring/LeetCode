@@ -1,6 +1,6 @@
 name: LeetCode CI
 
-on: on: [push]
+on: [push]
 #   push:
 #     branches: [ master ]
 #   pull_request:
