@@ -19,8 +19,8 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.8.2
-      - name: run CI tests
-        run: PYTHONPATH=. pytest test/
+#       - name: run CI tests
+#         run: PYTHONPATH=. pytest test/
       - run: echo "🍏 This job's status is ${{ job.status }}."
 # jobs:
 #   CI:
